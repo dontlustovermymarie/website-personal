@@ -1,0 +1,221 @@
++<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Netflix Clone</title>
+    <style>
+        /* General Styles */
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+            background-color: #141414;
+            color: #fff;
+        }
+
+        .header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 20px;
+            background-color: #000;
+            position: fixed;
+            width: 100%;
+            top: 0;
+            z-index: 1000;
+        }
+
+        .header .logo {
+            height: 30px;
+        }
+
+        .header .nav a {
+            color: #fff;
+            text-decoration: none;
+            margin: 0 15px;
+            font-size: 14px;
+            text-transform: uppercase;
+        }
+
+        .header .nav a:hover {
+            text-decoration: underline;
+        }
+
+        .banner {
+            height: 70vh;
+            background: url()  no-repeat center center;
+            background-size: ;
+            color: #fff;
+            display: flex;
+            align-items: center;
+            padding: 20px;
+            margin-top: 70px; /* Adjusted for fixed header */
+        }
+
+        .banner .banner-content {
+            max-width: 600px;
+        }
+
+        .banner h1 {
+            font-size: 3rem;
+            margin-bottom: 20px;
+        }
+
+        .banner p {
+            font-size: 1.5rem;
+            margin-bottom: 20px;
+        }
+
+        .banner .btn-play, .banner .btn-my-list {
+            background-color: #e50914;
+            border: none;
+            padding: 10px 20px;
+            color: #fff;
+            font-size: 1rem;
+            cursor: pointer;
+            margin-right: 10px;
+            border-radius: 5px;
+        }
+
+        .banner .btn-play:hover, .banner .btn-my-list:hover {
+            background-color: #f40612;
+        }
+
+        .trending {
+            padding: 20px;
+        }
+
+        .trending h2 {
+            font-size: 1,5rem;
+            margin-bottom: 10px;
+        }
+
+        .trending-row {
+            display: flex;
+            overflow-x: auto;
+        }
+
+        .trending-row img {
+            height: 200px;
+            margin-right: 10px;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: transform 0.3s;
+        }
+
+        .trending-row img:hover {
+            transform: scale(1.1);
+        }
+
+        .footer {
+            background-color: #000;
+            color: #777;
+            padding: 10px 20px;
+            text-align: center;
+            margin-top: 20px;
+        }
+
+        /* Responsive */
+        @media (max-width: 768px) {
+            .header a {
+                font-size: 14px;
+            }
+            .banner h1 {
+                font-size: 2rem;
+            }
+            .banner p {
+                font-size: 1rem;
+            }
+        }
+
+        .video-background video {
+            position: absolute;
+            top: 50%;
+            left: 70%;
+            width: 90%;
+            height: auto;
+            transform: translate(-50%, -50%);
+            z-index: -1;
+        }
+
+    </style>
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/0/08/Netflix_2015_logo.svg" alt="Netflix Logo" class="logo">
+        <nav class="nav">
+            <a href="#">Home</a>
+            <a href="#">Series</a>
+            <a href="#">Movies</a>
+            <a href="#">My List</a>
+        </nav>
+    </header>
+
+    <!-- Banner -->
+    <section class="banner">
+        <div class="banner-content">
+            <h1>hi!</h1>
+            <p>happy 18th!</p>
+            <button class="btn-play">Play</button>
+            <button class="btn-my-list">My List</button>
+        </div>
+    </section>
+
+    <!-- Trending Now -->
+    <section class="trending">
+        <h2>some of ur pict</h2>
+        <div class="trending-row">
+            <img src="pt1.png" alt="Movie 1">
+            <img src="pt2.png" alt="Movie 2">
+            <img src="pt3.png" alt="Movie 3">
+            <img src="https://via.placeholder.com/150x200" alt="Movie 4">
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <p>© 2024 Netflix, Inc. All rights reserved.</p>
+    </footer>
+
+    <!-- JavaScript -->
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const playButton = document.querySelector('.btn-play');
+            playButton.addEventListener('click', () => {
+                alert('long live!');
+                // Add logic to handle play action
+            });
+
+            const myListButton = document.querySelector('.btn-my-list');
+            myListButton.addEventListener('click', () => {
+                alert('still dreaming big!');
+                // Add logic to handle add to my future
+            });
+        });
+    </script>
+</body>
+</html>
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>document</title>
+</head>
+<body>
+    <audio controls autoplay>
+<source src="coldplay-spark.mp3">
+    </audio>
+</body>
+</html>
+
+<!-- Video Background -->
+<div class="video-background">
+    <video autoplay muted loop>
+        <source src="Kamen Rider Joker Henshin [Anime.ver].mp4" type="video/mp4">
+        
+    </video>
+</div>
